@@ -1,0 +1,36 @@
+.custom-container{
+    margin: 0rem 12rem;
+    font-family: 'Yolk';
+    #about-us {
+        .about-us {
+           
+          &__info {
+              width: 44rem;
+              background-color:$color-gray ;
+              box-sizing: border-box;
+              padding: 5rem 3rem;
+              border-radius: 0.6rem;
+            h2 {
+                font-size: 3rem;
+                padding: 0rem 0rem 2.9rem;
+                color: $color-forest;
+            }
+            &__text {
+              p {
+                color: $color-white-secondary;
+                line-height: 1.92rem;
+              }
+            }
+          }
+        }
+        .about-us-image {
+          @include flexbox(flex, flex-end);
+          margin-top: -15.36rem;
+        
+          img {
+              border-radius: 0.6rem;
+          }
+        }
+      }
+      
+}

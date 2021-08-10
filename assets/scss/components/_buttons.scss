@@ -1,0 +1,47 @@
+.button {
+  @include flexbox(flex, center);
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  min-width: 144px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  &.primary {
+    background-color: $color-forest;
+    color: $color-dark-secondary;
+    height: 42px;
+    padding: 8px 10px;
+    width: max-content;
+    &:hover {
+      background-color: rgba(201, 255, 199, 0.8);
+    }
+  }
+  &.secondary {
+    height: 56px;
+    margin: 32px 0px 0px 0px;
+    padding: 16px 32px;
+    width: 200px;
+    color: $color-forest;
+    border: 1px solid $color-white-secondary;
+    &:hover {
+      border: 1px solid $color-forest;
+      background-color: $color-forest;
+      color: $color-dark-secondary;
+    }
+  }
+  &.transparent{
+    background-color: rgba(0, 0, 0, 0); 
+    color: $color-forest;
+    height: 42px;
+    padding: 0.96rem 1.92px;
+    width: max-content;
+    border: 0.06rem solid $color-white-secondary;
+    &:hover{
+      border: 0.06rem solid $color-white-secondary;
+      background-color: rgba(255,255,255,0.2); 
+    }
+  }
+}

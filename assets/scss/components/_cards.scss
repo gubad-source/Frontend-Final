@@ -1,0 +1,60 @@
+.cards {
+  &__heading {
+    @include flexbox(flex, center);
+    h2 {
+      color: $color-forest;
+      font-weight: 700;
+      margin-bottom: 8px;
+      font-size: 40px;
+      line-height: 56px;
+    }
+  }
+  &__content {
+    @include flexbox;
+    &__stretch {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      background-color: $color-gray;
+      box-sizing: border-box;
+      padding: 1.86rem;
+      border-radius: 0.6rem;
+      border: 0.06rem solid $color-forest;
+      margin: 0.7rem;
+      transition: all 0.6s ease-in-out;
+      &:hover {
+        border-color: transparent;
+      }
+      &:hover a {
+        border: 1px solid $color-forest;
+        background-color: $color-forest;
+        color: $color-dark-secondary;
+      }
+      &:hover i {
+        color: $color-forest;
+        background-color: $color-dark;
+      }
+      &__box {
+        i {
+          width: min-content;
+          padding: 17px;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          border-radius: 8px;
+          display: inline-block;
+          transition: all 0.3s ease 0s;
+         margin: 0 0 2rem 0;
+        }
+        &__body {
+          h4 {
+            color: $color-white-primary;
+          }
+          p {
+            color: $color-white-secondary;
+          }
+          a {
+          }
+        }
+      }
+    }
+  }
+}

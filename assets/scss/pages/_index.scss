@@ -1,0 +1,113 @@
+// body{
+//     background-color: $color-dark;
+// }
+
+
+
+// main
+
+.logo {
+  padding: 5rem 0 0 0;
+  &__header {
+    @include flexbox;
+    h1 {
+      color: $color-forest;
+      font-size: 2.4rem;
+    }
+  }
+
+  &__carousel {
+    width: 100%;
+    height: 600px;
+    &__cell {
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+      border-radius: 6%;
+      margin: 3rem 1rem;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      padding: 1rem;
+      img {
+        width: 100%;
+        height: 60%;
+      }
+    }
+  }
+}
+
+
+//***//
+.news {
+  background-color: $color-gray;
+  border-radius: 0.6rem;
+  &__inner {
+    @include flexbox(flex, space-between, flex-start);
+    box-sizing: border-box;
+    padding: 6rem 6rem;
+    &__left {
+      &__heading {
+        margin: 0 0 5.76rem 0;
+        h2 {
+          color: $color-forest;
+          font-size: 2.4rem;
+          line-height: 3.36rem;
+          font-weight: 700;
+          margin: 0 0 0.48rem 0;
+        }
+        p {
+          color: $color-white-secondary;
+        }
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+    &__card {
+      &__stretch {
+        display: flex;
+        margin: 0 0 1.92rem 0;
+        img {
+        }
+        &__info {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          padding: 24px 0;
+          margin-left: 32px;
+          flex: 1 1 auto;
+          position: relative;
+          cursor:pointer;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -16px;
+            right: -2rem;
+            height: 1px;
+            width: 26rem;
+            background-color: rgba(255, 255, 255, 0.2);
+          }
+
+          h5 {
+            color: $color-white-primary;
+            line-height: 1.6rem;
+            &:hover{
+              color: $color-forest;
+            }
+          }
+          p {
+            color: $color-white-secondary;
+          }
+          a {
+            color: $color-forest;
+            text-decoration: none;
+            line-height: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+}

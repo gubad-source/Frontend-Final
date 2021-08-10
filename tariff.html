@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+  />
+  <script
+    src="https://kit.fontawesome.com/454409f9ac.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-inner">
+          <div class="header__top-inner__left">
+            <a href="#">
+              <span>Dasinmasina icaze yoxdur</span>
+            </a>
+            <a href="#">
+              <span>Tez-tez verilen suallar</span>
+            </a>
+          </div>
+          <div class="header__top-inner__right">
+            <div class="currency">
+              <span> 1USD-1.76AZN </span> <br>
+              <span class="d-none">  1TR-1.20AZN </span>
+            </div>
+            <a href="" class="phone">
+              <i class="icon-phone_two_tone"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
+              <span>+994503793524</span>
+            </a>
+            <div class="language">
+              <span>AZE</span>
+              <ul class="d-none">
+                <li>ENG</li>
+                <li>RUS</li>
+              </ul>
+            </div>
+            <a href="#" class="button primary">Qeydiyyat</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-4">
+      <div class="header__bottom">
+        <nav class="navbar">
+          <a href="./index.html">
+            <img src="./assets/images/logo.svg" alt="" />
+          </a>
+          <div class="navbar__info">
+            <ul>
+              <li><a href="./about.html">haqqimizda</a></li>
+              <li><a href="./tariff.html">tarifler</a></li>
+              <li><a href="./services.html">xidmetler</a></li>
+              <li><a href="">magazalar</a></li>
+              <li><a href="./innovation.html">yenilikler</a></li>
+              <li><a href="./contact.html">elaqe</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="header__bottom__actions">
+          <a href="./login.html">
+            <i class="icon-user_two_tone"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>
+            <span class="cart-account">Hesabim</span>
+          </a>
+          <a href="" style="position: relative;">
+            <i class="icon-cart"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>
+            <span class="zero">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+<main>
+    <div class="container">
+        <section id="tariff2" class="tarifff">
+          <div class="col-lg-12">
+            <div class="tariff">
+              <div class="tariff__heading">
+                <h2 class="tariff__heading__title">Tariflər</h2>
+                <div class="tariff__heading__tab">
+                  <button data-source="1">
+                    <img src="./assets/images/Turkey.svg" alt="" /><span
+                      >Turkiye</span
+                    >
+                  </button>
+                  <button data-source="2" class="activee">
+                    <img src="./assets/images/US.svg" alt="" /><span>ABS</span>
+                  </button>
+                </div>
+              </div>
+              <div class="mega-tab d-none" data-target="1">
+                <div class="tariff__info">
+                  <div class="tariff__info__head">
+                    <i class="icon-Package-v2_two_tone icon-lg icon-bg"><span class="path1"></span><span class="path2"></span></i>
+                    <h5>0.001 kq’dan 0.101 kq’a qədər</h5>
+                  </div>
+                  <div class="tariff__info__category">
+                    <div class="tariff-price">
+                      <div class="tariff-name">Adi məhsul</div>
+                      <div class="tariff-value">2 USD</div>
+                    </div>
+                    <div class="tariff-price">
+                      <div class="tariff-name">Maye və kosmetik</div>
+                      <div class="tariff-value">2 USD</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tariff__info">
+                  <div class="tariff__info__head">
+                    <i class="icon-Package-v2_two_tone icon-lg icon-bg"
+                      ><span class="path1"></span><span class="path2"></span
+                    ></i>
+                    <h5>0.001 kq’dan 0.100 kq’a qədər</h5>
+                  </div>
+                  <div class="tariff__info__category">
+                    <div class="tariff-price">
+                      <div class="tariff-name">Adi məhsul</div>
+                      <div class="tariff-value">2 USD</div>
+                    </div>
+                    <div class="tariff-price">
+                      <div class="tariff-name">Maye və kosmetik</div>
+                      <div class="tariff-value">2 USD</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tariff__info">
+                  <div class="tariff__info__head">
+                    <i class="icon-Package-v2_two_tone icon-lg icon-bg"
+                      ><span class="path1"></span><span class="path2"></span
+                    ></i>
+                    <h5>0.001 kq’dan 0.100 kq’a qədər</h5>
+                  </div>
+                  <div class="tariff__info__category">
+                    <div class="tariff-price">
+                      <div class="tariff-name">Adi məhsul</div>
+                      <div class="tariff-value">1 USD</div>
+                    </div>
+                    <div class="tariff-price">
+                      <div class="tariff-name">Maye və kosmetik</div>
+                      <div class="tariff-value">1 USD</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tariff__info">
+                  <div class="tariff__info__head">
+                    <i class="icon-Package-v2_two_tone icon-lg icon-bg"
+                      ><span class="path1"></span><span class="path2"></span
+                    ></i>
+                    <h5>0.001 kq’dan 0.100 kq’a qədər</h5>
+                  </div>
+                  <div class="tariff__info__category">
+                    <div class="tariff-price">
+                      <div class="tariff-name">Adi məhsul</div>
+                      <div class="tariff-value">1 USD</div>
+                    </div>
+                    <div class="tariff-price">
+                      <div class="tariff-name">Maye və kosmetik</div>
+                      <div class="tariff-value">1 USD</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tariff__info">
+                  <div class="tariff__info__head">
+                    <i class="icon-Package-v2_two_tone icon-lg icon-bg"
+                      ><span class="path1"></span><span class="path2"></span
+                    ></i>
+                    <h5>0.001 kq’dan 0.100 kq’a qədər</h5>
+                  </div>
+                  <div class="tariff__info__category">
+                    <div class="tariff-price">
+                      <div class="tariff-name">Adi məhsul</div>
+                      <div class="tariff-value">1 USD</div>
+                    </div>
+                    <div class="tariff-price">
+                      <div class="tariff-name">Maye və kosmetik</div>
+                      <div class="tariff-value">1 USD</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tariff__info">
+                  <div class="tariff__info__head">
+                    <i class="icon-Package-v2_two_tone icon-lg icon-bg"
+                      ><span class="path1"></span><span class="path2"></span
+                    ></i>
+                    <h5>0.001 kq’dan 0.100 kq’a qədər</h5>
+                  </div>
+                  <div class="tariff__info__category">
+                    <div class="tariff-price">
+                      <div class="tariff-name">Adi məhsul</div>
+                      <div class="tariff-value">1 USD</div>
+                    </div>
+                    <div class="tariff-price">
+                      <div class="tariff-name">Maye və kosmetik</div>
+                      <div class="tariff-value">1 USD</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tariff__info">
+                  <div class="tariff__info__head">
+                    <i class="icon-Package-v2_two_tone icon-lg icon-bg"
+                      ><span class="path1"></span><span class="path2"></span
+                    ></i>
+                    <h5>0.001 kq’dan 0.100 kq’a qədər</h5>
+                  </div>
+                  <div class="tariff__info__category">
+                    <div class="tariff-price">
+                      <div class="tariff-name">Adi məhsul</div>
+                      <div class="tariff-value">1 USD</div>
+                    </div>
+                    <div class="tariff-price">
+                      <div class="tariff-name">Maye və kosmetik</div>
+                      <div class="tariff-value">1 USD</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tariff__info">
+                  <div class="tariff__info__head">
+                    <i class="icon-Package-v2_two_tone icon-lg icon-bg"
+                      ><span class="path1"></span><span class="path2"></span
+                    ></i>
+                    <h5>0.001 kq’dan 0.100 kq’a qədər</h5>
+                  </div>
+                  <div class="tariff__info__category">
+                    <div class="tariff-price">
+                      <div class="tariff-name">Adi məhsul</div>
+                      <div class="tariff-value">2 USD</div>
+                    </div>
+                    <div class="tariff-price">
+                      <div class="tariff-name">Maye və kosmetik</div>
+                      <div class="tariff-value">2 USD</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tariff__info">
+                  <div class="tariff__info__head">
+                    <i class="icon-Package-v2_two_tone icon-lg icon-bg"
+                      ><span class="path1"></span><span class="path2"></span
+                    ></i>
+                    <h5>0.001 kq’dan 0.100 kq’a qədər</h5>
+                  </div>
+                  <div class="tariff__info__category">
+                    <div class="tariff-price">
+                      <div class="tariff-name">Adi məhsul</div>
+                      <div class="tariff-value">2 USD</div>
+                    </div>
+                    <div class="tariff-price">
+                      <div class="tariff-name">Maye və kosmetik</div>
+                      <div class="tariff-value">2 USD</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mega-tab active" data-target="2">
+                <div class="tariff__info">
+                  <div class="tariff__info__head">
+                    <i class="icon-Package-v2_two_tone icon-lg icon-bg"
+                      ><span class="path1"></span><span class="path2"></span
+                    ></i>
+                    <h5>0.001 kq’dan 0.100 kq’a qədər</h5>
+                  </div>
+                  <div class="tariff__info__category">
+                    <div class="tariff-price">
+                      <div class="tariff-name">Adi məhsul</div>
+                      <div class="tariff-value">6 USD</div>
+                    </div>
+                    <div class="tariff-price">
+                      <div class="tariff-name">Maye və kosmetik</div>
+                      <div class="tariff-value">6 USD</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tariff__info">
+                  <div class="tariff__info__head">
+                    <i class="icon-Package-v2_two_tone icon-lg icon-bg"
+                      ><span class="path1"></span><span class="path2"></span
+                    ></i>
+                    <h5>0.001 kq’dan 0.100 kq’a qədər</h5>
+                  </div>
+                  <div class="tariff__info__category">
+                    <div class="tariff-price">
+                      <div class="tariff-name">Adi məhsul</div>
+                      <div class="tariff-value">6 USD</div>
+                    </div>
+                    <div class="tariff-price">
+                      <div class="tariff-name">Maye və kosmetik</div>
+                      <div class="tariff-value">6 USD</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tariff__info">
+                  <div class="tariff__info__head">
+                    <i class="icon-Package-v2_two_tone icon-lg icon-bg"
+                      ><span class="path1"></span><span class="path2"></span
+                    ></i>
+                    <h5>0.001 kq’dan 0.100 kq’a qədər</h5>
+                  </div>
+                  <div class="tariff__info__category">
+                    <div class="tariff-price">
+                      <div class="tariff-name">Adi məhsul</div>
+                      <div class="tariff-value">1 USD</div>
+                    </div>
+                    <div class="tariff-price">
+                      <div class="tariff-name">Maye və kosmetik</div>
+                      <div class="tariff-value">1 USD</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tariff__info">
+                  <div class="tariff__info__head">
+                    <i class="icon-Package-v2_two_tone icon-lg icon-bg"
+                      ><span class="path1"></span><span class="path2"></span
+                    ></i>
+                    <h5>0.001 kq’dan 0.100 kq’a qədər</h5>
+                  </div>
+                  <div class="tariff__info__category">
+                    <div class="tariff-price">
+                      <div class="tariff-name">Adi məhsul</div>
+                      <div class="tariff-value">1 USD</div>
+                    </div>
+                    <div class="tariff-price">
+                      <div class="tariff-name">Maye və kosmetik</div>
+                      <div class="tariff-value">1 USD</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tariff__info">
+                  <div class="tariff__info__head">
+                    <i class="icon-Package-v2_two_tone icon-lg icon-bg"
+                      ><span class="path1"></span><span class="path2"></span
+                    ></i>
+                    <h5>0.001 kq’dan 0.100 kq’a qədər</h5>
+                  </div>
+                  <div class="tariff__info__category">
+                    <div class="tariff-price">
+                      <div class="tariff-name">Adi məhsul</div>
+                      <div class="tariff-value">1 USD</div>
+                    </div>
+                    <div class="tariff-price">
+                      <div class="tariff-name">Maye və kosmetik</div>
+                      <div class="tariff-value">1 USD</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tariff__info">
+                  <div class="tariff__info__head">
+                    <i class="icon-Package-v2_two_tone icon-lg icon-bg"
+                      ><span class="path1"></span><span class="path2"></span
+                    ></i>
+                    <h5>0.001 kq’dan 0.100 kq’a qədər</h5>
+                  </div>
+                  <div class="tariff__info__category">
+                    <div class="tariff-price">
+                      <div class="tariff-name">Adi məhsul</div>
+                      <div class="tariff-value">1 USD</div>
+                    </div>
+                    <div class="tariff-price">
+                      <div class="tariff-name">Maye və kosmetik</div>
+                      <div class="tariff-value">1 USD</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tariff__info">
+                  <div class="tariff__info__head">
+                    <i class="icon-Package-v2_two_tone icon-lg icon-bg"
+                      ><span class="path1"></span><span class="path2"></span
+                    ></i>
+                    <h5>0.001 kq’dan 0.100 kq’a qədər</h5>
+                  </div>
+                  <div class="tariff__info__category">
+                    <div class="tariff-price">
+                      <div class="tariff-name">Adi məhsul</div>
+                      <div class="tariff-value">1 USD</div>
+                    </div>
+                    <div class="tariff-price">
+                      <div class="tariff-name">Maye və kosmetik</div>
+                      <div class="tariff-value">1 USD</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tariff__info">
+                  <div class="tariff__info__head">
+                    <i class="icon-Package-v2_two_tone icon-lg icon-bg"
+                      ><span class="path1"></span><span class="path2"></span
+                    ></i>
+                    <h5>0.001 kq’dan 0.100 kq’a qədər</h5>
+                  </div>
+                  <div class="tariff__info__category">
+                    <div class="tariff-price">
+                      <div class="tariff-name">Adi məhsul</div>
+                      <div class="tariff-value">1 USD</div>
+                    </div>
+                    <div class="tariff-price">
+                      <div class="tariff-name">Maye və kosmetik</div>
+                      <div class="tariff-value">1 USD</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tariff__info">
+                  <div class="tariff__info__head">
+                    <i class="icon-Package-v2_two_tone icon-lg icon-bg"
+                      ><span class="path1"></span><span class="path2"></span
+                    ></i>
+                    <h5>0.001 kq’dan 0.100 kq’a qədər</h5>
+                  </div>
+                  <div class="tariff__info__category">
+                    <div class="tariff-price">
+                      <div class="tariff-name">Adi məhsul</div>
+                      <div class="tariff-value">1 USD</div>
+                    </div>
+                    <div class="tariff-price">
+                      <div class="tariff-name">Maye və kosmetik</div>
+                      <div class="tariff-value">1 USD</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="container">
+        <section id="calculator2" class="calculator">
+          <div class="calculator__heading">
+            <h2>Kalkulyator</h2>
+            <p>
+              Bağlamanın hər hansı bir tərəfinin ölçüsü 1m və daha çox olarsa,
+              bağlamanın həm həcm, həm də fiziki çəkisi <br> hesablanır. Hansı çəki
+              yüksək olarsa, daşınma haqqı ona əsasən hesablanır.
+            </p>
+          </div>
+          <div class="calculator__content">
+            <div class="row" style="margin-bottom: 2rem;">
+              <div class="col-lg-6">
+                <h6>Ölkə Seçin</h6>
+                <div class="calculator__content__tabs">
+                  <button><img src="./assets/images/Turkey.svg" alt=""><span>Turkiye</span></button>
+                  <button><img src="./assets/images/US.svg" alt=""><span>ABS</span></button>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <h6>Baglamanin novu</h6>
+                <div class="calculator__content__tabs">
+                  <button>Adi mehsul</button>
+                  <button>Maye ve kosmetika</button>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="input">
+                  <div class="range-article">
+                    <p></p>
+                    <input type="text" id="text1" value="6" />
+                  </div>
+                  <select name="" id="">
+                    <option value="">sm</option>
+                    <option value="">m</option>
+                  </select>
+                  <input type="range" name="" class="range" id="range1" />
+                </div>
+                <div class="input">
+                  <div class="range-article">
+                    <p></p>
+                    <input type="text" id="text2" value="6" />
+                  </div>
+                  <select name="" id="">
+                    <option value="">sm</option>
+                    <option value="">m</option>
+                  </select>
+                  <input type="range" name="" class="range"" id="range2" />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="input">
+                  <div class="range-article">
+                    <p></p>
+                    <input type="text" id="text3" value="6" />
+                  </div>
+                  <select name="" id="">
+                    <option value="">sm</option>
+                    <option value="">m</option>
+                  </select>
+                  <input type="range" name="" class="range" id="range3" />
+                </div>
+                <div class="input">
+                  <div class="range-article">
+                    <p></p>
+                    <input type="text" id="text4" value="6" />
+                  </div>
+                  <select name="" id="">
+                    <option value="">kq</option>
+                    <option value="">qr</option>
+                  </select>
+                  <input type="range" name="" class="range" id="range4"/>
+                </div>
+              </div>
+            </div>
+            <div class="calculator__list">
+              <div class="calculator__list__item">
+                <span>Əlavə Xidmətlər</span> <br>
+                <input id="6" type="checkbox" value="501" />
+                <label for="6" class="option">Baglamanın yoxlanması (2 USD)</label>
+              </div>
+              <div class="calculator__list__item">
+                <input id="7" type="checkbox" value="66" />
+                <label for="7" class="option">İadə Xidməti (4 USD)</label>
+              </div>
+              <div class="calculator__list__item">
+                <input id="8" type="checkbox" value="99" />
+                <label for="8"  class="option">Baglamanın yoxlanması - Sifaris et xidməti vasitəsi ilə (1 USD)</label>
+              </div>
+            </div>
+            <a href="" class="calc-button button primary">Hesabla</a>
+            <div class="calculator__amount">
+              <div class="calculator__amount__dollar total-calc counter">
+                $0.00   <span></span>
+              </div>
+              <div class="calculator__amount__manat total-calc2 counter" >
+                ₼0.00  <span></span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="footer__heading">
+          <h2>Kömək lazımdır?</h2>
+        </div>
+        <ul class="footer__contact">
+          <li>
+            <i></i
+            ><a href="#"
+              ><span
+                >Bakı şəh.,AZ1072, Nərimanov rayonu Koroğlu Rəhimov küçəsi
+                Gəncə <br />
+                şəhəri Həsən Əliyev pr.75</span
+              ></a
+            >
+          </li>
+          <li>
+            <i></i><a href="#"><span>info@velocity.az</span></a>
+          </li>
+          <li>
+            <i></i><a href="#"><span>+994503793524</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <ul class="footer__nav">
+          <li><a href="#">Dasinmasina icaze yoxdur</a></li>
+          <li><a href="#">Tez-tez verilen suallar</a></li>
+          <li><a href="#">Gizlilik siyaseti</a></li>
+          <li><a href="#">Istifadeci razilasmasi</a></li>
+          <li><a href="#">Sifaris et qaydalari</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__bottom__left">
+        <img src="./assets/images/logo-white.svg" alt="" />
+        <p>© 2021 Velocity LTD. Bütün hüquqlar qorunur</p>
+      </div>
+      <div class="footer__bottom__right">
+        <a href="#"><i class="icon-facebook"></i></a>
+        <a href="#"><i class="icon-instagram"></i></a>
+        <a href="#"><i class="icon-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

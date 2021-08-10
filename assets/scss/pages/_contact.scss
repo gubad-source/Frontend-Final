@@ -1,0 +1,127 @@
+.contact {
+  padding: 0 0 3rem;
+  &__heading {
+    @include flexbox(flex, center);
+    text-align: center;
+    h2 {
+      color: $color-forest;
+      font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 40px;
+    line-height: 56px;
+    }
+    p {
+      color: $color-white-secondary;
+      margin: 0 0 3rem 0;
+    }
+  }
+  &__content {
+    display: flex;
+    &__info {
+      color: white;
+      padding: 31px 31px 31px;
+      flex: 1;
+      background-color: $color-gray;
+      border-radius: 0.6rem;
+      margin: 0 2rem 0 0;
+      h4 {
+        font-weight: 600;
+        margin-bottom: 2.4rem;
+        font-size: 1.2rem;
+      }
+      ul {
+        li {
+          @include flexbox(flex, start);
+          margin-bottom: 40px;
+          i {
+            margin-right: 24px;
+            font-size: 36px;
+            display: inline-block;
+            padding: 17px;
+            border: 0.06rem solid $color-forest;
+            border-radius: 0.6rem;
+          }
+          .map-icon{
+            color: $color-goldy;
+          }
+          .clock-icon{
+            color: $color-forest-secondary;
+          }
+          .mail-icon{
+            color: $color-pinky;
+          }
+          .info {
+            h5 {
+              line-height: 1.68rem;
+            }
+            p {
+              color: $color-white-secondary;
+              line-height: 1.4rem;
+            }
+          }
+        }
+      }
+      h4 {
+      }
+      .social {
+        a {
+          text-decoration: none;
+          padding-right: 1rem;
+          i {
+            font-size: 32px;
+          }
+        }
+      }
+    }
+    &__input {
+      padding: 31px 31px 47px;
+      flex: 1;
+      background-color: $color-gray;
+      border-radius: 0.6rem;
+      h4 {
+        font-size: 20px;
+        line-height: 32px;
+        color: $color-white-primary;
+      }
+      p {
+        font-size: 18px !important;
+        line-height: 32px !important;
+        color: $color-white-secondary;
+      }
+      form {
+        .form-group {
+          background-color: $color-gray;
+          position: relative;
+          .form-control {
+            padding: 15px;
+            background-color: #22252c;
+            margin-bottom: 0.78rem;
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #22252c;
+            &:focus ~ label {
+              top: 0.3rem;
+              font-size: 0.7rem;
+            }
+          }
+          label {
+            transition: all 0.3s ease-in-out;
+            position: absolute;
+            color: $color-white-secondary;
+            top: 1rem;
+            left: 1rem;
+          }
+        }
+        textarea {
+          background-color: $color-dark;
+          border-radius: 8px;
+          width: 100%;
+        }
+        button {
+          margin-left: auto;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}

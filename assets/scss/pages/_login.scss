@@ -1,0 +1,105 @@
+.custom-container {
+  padding: 5rem 0rem;
+  margin: 0rem 12rem;
+  #login {
+    @include flexbox(flex, space-evenly, stretch);
+    background-color: $color-gray;
+    border-radius: 8px;
+    padding: 24px;
+    font-family: "Yolk";
+    aside {
+      background-color: $color-forest;
+      box-sizing: border-box;
+      padding: 2rem 5rem;
+      border-radius: 0.6rem;
+      h2 {
+        font-weight: 700;
+        margin-bottom: 8px;
+        font-size: 40px;
+        line-height: 56px;
+      }
+      a {
+        text-decoration: none;
+        padding: 14px 0;
+        border: 2px solid $color-dark;
+        border-radius: 8px;
+        width: 100% !important;
+        font-weight: 500;
+        width: 100%;
+        color: $color-dark;
+        margin: 20px 0 0 0;
+        display: inline-block;
+        text-align: center;
+      }
+    }
+    form {
+      margin-right: 4rem;
+      .login-heading {
+        margin: 0 0 4rem 0;
+        h2 {
+          font-weight: 700;
+          margin-bottom: 8px;
+          font-size: 40px;
+          line-height: 56px;
+          color: $color-forest;
+          text-align: center;
+        }
+        p {
+          text-align: center;
+          color: $color-dark-secondary;
+          font-size: 16px;
+          line-height: 28px;
+          max-width: 800px;
+          color: $color-white-secondary;
+        }
+      }
+      .login__input {
+        &__floating {
+          position: relative;
+          margin: 0 0 3rem 0;
+          input {
+            width: 100%;
+            background-color: $color-dark;
+            border: none;
+            padding: 1rem 0.6rem;
+            border-radius: 0.6rem;
+            &:focus ~ label {
+              top: 0;
+              font-size: 0.7rem;
+            }
+          }
+          label {
+            color: $color-white-secondary;
+            position: absolute;
+            top: 1rem;
+            left: 2rem;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+      .form-check {
+        margin: 0 0 3rem 0;
+        input {
+        }
+        label {
+          color: $color-white-primary;
+        }
+      }
+      button {
+        width: 100%;
+      }
+      a {
+        text-decoration: none;
+        color: $color-forest;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+          font-size: 1.4rem;
+          color: $color-forest;
+        }
+      }
+    }
+  }
+}

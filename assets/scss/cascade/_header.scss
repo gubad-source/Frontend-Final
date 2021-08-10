@@ -1,0 +1,108 @@
+.header {
+  font-family: "Yolk";
+  height: 56px;
+  background-color: $color-gray;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  &__top {
+    .container {
+    }
+    &-inner {
+      @include flexbox;
+      padding-top: 0.5rem;
+      &__left {
+        width: 33%;
+        a {
+          margin-right: 1rem;
+          text-decoration: none;
+          color: $color-white-third;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            color: $color-white-primary;
+          }
+          span {
+          }
+        }
+      }
+      &__right {
+        @include flexbox;
+        width: 43%;
+        .currency {
+          color: $color-white-third;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            cursor: pointer;
+            color: $color-white-primary;
+          }
+        }
+        .language {
+          color: $color-white-third;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            cursor: pointer;
+            color: $color-white-primary;
+          }
+        }
+        .phone {
+          text-decoration: none;
+          color: $color-white-third;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            cursor: pointer;
+            color: $color-white-primary;
+          }
+        }
+      }
+    }
+  }
+  &__bottom {
+    @include flexbox;
+    .navbar {
+      width: 71%;
+      &__info {
+        li {
+          display: inline-block;
+          margin: 0px 17px;
+          a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $color-white-primary;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              color: $color-forest;
+            }
+          }
+        }
+      }
+    }
+    &__actions {
+      a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: $color-white-primary;
+        i {
+          font-size: 2rem;
+        }
+        .cart-account{
+          position: relative;
+          top: -0.3rem;
+        }
+        .zero{
+          background-color: $color-blood;
+          position: absolute;
+          top: -19px;
+          right: -15px;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 16px;
+          text-align: center;
+          width: 70%;
+          border-radius: 50%;
+          padding: 4px;
+        }
+      }
+    }
+  }
+}

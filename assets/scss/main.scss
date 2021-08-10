@@ -1,0 +1,32 @@
+//common
+@import 'icomoon';
+@import 'mixins';
+@import 'typography';
+@import 'variables';
+@import 'reset';
+
+// pages
+@import 'pages/index';
+@import 'pages/innovation';
+@import 'pages/services';
+@import 'pages/about';
+@import 'pages/contact';
+@import 'pages/login';
+
+//components
+@import 'components/buttons';
+@import 'components/calculator';
+@import 'components/cards';
+@import 'components/tariff';
+
+//cascade
+@import 'cascade/footer';
+@import 'cascade/header';
+
+//main
+main {
+    // height: 5000px;
+    background-color: $color-dark;
+    padding: 6rem 0 1rem 0;
+    font-family: 'Yolk';
+  }
