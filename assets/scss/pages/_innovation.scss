@@ -25,7 +25,7 @@
   }
   &__tabs {
     @include flexbox(flex, center);
-    margin: 2rem 0rem 2rem;
+    padding: 2rem 0rem 2rem;
 
     ul {
       border: 0.06rem solid $color-white-primary;
@@ -91,4 +91,42 @@
       }
     }
   }
+}
+
+@media only screen and (max-width:600px){
+.innovations{
+  &__tabs{
+    ul{
+      box-sizing: border-box;
+      padding: 0.5rem 0rem;
+      a{
+        font-size: 0.55rem;
+        padding: 0.6rem 3rem;
+      }
+    }
+  }
+  &__cards{
+    &__item{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background-color: $color-gray;
+      border-radius: 0.6rem;
+      box-sizing: border-box;
+      padding: 1.5rem;
+      margin: 0 0 1rem 0;
+      border-color: transparent;
+      transition: all 0.6s ease-in-out;
+      img{
+        width: 100%;
+        margin: 0rem 0rem 1rem 0rem;
+      }
+      &_body{
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+      }
+    }
+  }
+}
 }
