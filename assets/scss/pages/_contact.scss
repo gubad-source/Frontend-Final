@@ -125,3 +125,13 @@
     }
   }
 }
+
+@media only screen and (max-width:600px){
+  .contact{
+    &__content{
+      &__info{
+        margin: 0 0 2rem 0;
+      }
+    }
+  }
+}
