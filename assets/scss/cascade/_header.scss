@@ -128,7 +128,9 @@
     a {
       text-decoration: none;
     }
+    
     .side__menu{
+      z-index: 6;
       font-family: 'Yolk';
       position: fixed;
       top: 0px;
@@ -138,7 +140,8 @@
       color: $color-white-primary;
       font-size: 1rem;
       text-transform: uppercase;
-      // transform: translateX(-100%);
+      transform: translateX(-100%);
+      transition: all 1s ease-in-out;
       &__head {
         @include flexbox(flex,flex-end);
         a {

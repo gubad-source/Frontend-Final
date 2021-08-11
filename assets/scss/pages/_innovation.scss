@@ -96,12 +96,14 @@
 @media only screen and (max-width:600px){
 .innovations{
   &__tabs{
+    display: flex;
+    flex-wrap: nowrap;
     ul{
       box-sizing: border-box;
       padding: 0.5rem 0rem;
       a{
-        font-size: 0.55rem;
-        padding: 0.6rem 3rem;
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
       }
     }
   }
