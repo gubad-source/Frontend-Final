@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
 
-  
   &__top {
     .container {
     }
@@ -86,11 +85,11 @@
         i {
           font-size: 2rem;
         }
-        .cart-account{
+        .cart-account {
           position: relative;
           top: -0.3rem;
         }
-        .zero{
+        .zero {
           background-color: $color-blood;
           position: absolute;
           top: -19px;
@@ -108,27 +107,88 @@
   }
 }
 
-.mobile{
+.mobile {
   display: none;
 }
 
-@media only screen and (max-width:600px){
-  .header{
-  display: none;
-   }
-   .mobile{
-     display: block;
-     height: 16%;
-     width: 100%;
-     background-color: $color-dark;
-     font-size: 2rem;
-     @include flexbox (flex,space-between);
-     .logo{
-       display: contents;
-     }
-     a{
+@media only screen and (max-width: 600px) {
+  .header {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    height: 16%;
+    width: 100%;
+    background-color: $color-dark;
+    font-size: 2rem;
+    @include flexbox(flex, space-between);
+    .logo {
+      display: contents;
+    }
+    a {
       text-decoration: none;
-     }
-   }
-
- }
+    }
+    .side__menu{
+      font-family: 'Yolk';
+      position: fixed;
+      top: 0px;
+      height: 100%;
+      width: 26rem;
+      background-color: $color-dark;
+      color: $color-white-primary;
+      font-size: 1rem;
+      text-transform: uppercase;
+      // transform: translateX(-100%);
+      &__head {
+        @include flexbox(flex,flex-end);
+        a {
+          margin: 0 6rem 0 0;
+          img {
+          }
+        }
+        i {
+          font-size: xx-large;
+        }
+      }
+      &__body {
+        li {
+          a {
+            display: inline-block;
+            font-size: 1.4rem;
+            line-height: 1.68rem;
+            font-weight: 600;
+            padding: 1rem 1.5rem;
+            background-color: $color-gray;
+            color: $color-white-primary;
+            width: 90%;
+            border-radius: 0.6rem;
+            margin: 0.3rem;
+          }
+        }
+      }
+      &__foot {
+        @include flexbox(flex,space-between,baseline);
+        &__languages {
+          a {
+            color: $color-white-primary;
+            padding: 1rem 0.66rem;
+            border: 0.06rem solid $color-forest;
+            border-radius: 0.6rem;
+            margin: 0 0.4rem 0 0;
+          }
+        }
+        &__phone {
+          a {
+            i {
+              
+            }
+            span {
+              color: $color-white-primary;
+            }
+          }
+        }
+      }
+    }
+    
+  }
+}
