@@ -1,37 +1,68 @@
-.custom-container{
-    margin: 0rem 12rem;
-    font-family: 'Yolk';
-    #about-us {
-        .about-us {
-           
-          &__info {
-              width: 44rem;
-              background-color:$color-gray ;
-              box-sizing: border-box;
-              padding: 5rem 3rem;
-              border-radius: 0.6rem;
-            h2 {
-                font-size: 3rem;
-                padding: 0rem 0rem 2.9rem;
-                color: $color-forest;
-            }
-            &__text {
-              p {
-                color: $color-white-secondary;
-                line-height: 1.92rem;
-              }
-            }
-          }
+.about-custom-container {
+  margin: 0rem 12rem;
+  font-family: "Yolk";
+  width: 44rem;
+
+  #about-us {
+    .about-us {
+      z-index: 2;
+      &__info {
+        background-color: $color-gray;
+        box-sizing: border-box;
+        padding: 5rem 3rem;
+        border-radius: 0.6rem;
+        h2 {
+          font-size: 3rem;
+          padding: 0rem 0rem 2.9rem;
+          color: $color-forest;
         }
-        .about-us-image {
-          @include flexbox(flex, flex-end);
-          margin-top: -15.36rem;
-        
-          img {
-              border-radius: 0.6rem;
+        &__text {
+          p {
+            color: $color-white-secondary;
+            line-height: 1.92rem;
           }
         }
       }
-      
-}
+    }
+    .about-us-image {
+      @include flexbox(flex, flex-end);
+      margin-top: -15.36rem;
+      margin-left: 27rem;
+      img {
+        border-radius: 0.6rem;
+      }
+    }
+  }
 
+  @media only screen and (max-width: 600px) {
+    width: 90%;
+    margin: 0rem 0rem;
+    .custom-container{
+      display: contents;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .go-custom-container{
+    margin: 0rem;
+    display: contents;
+  }
+  .about-custom-container {
+    @include flexbox;
+    margin: 0 auto;
+  }
+  #about-us {
+    .about-us-image {
+      display: block !important;
+      margin: 0 !important;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+.go-custom-container{
+  width: 87%;
+  margin: 0rem 12rem;
+  font-family: "Yolk";
+}

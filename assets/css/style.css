@@ -1073,8 +1073,7 @@ table {
       color: #C8FFC7;
       font-size: 2.4rem; }
   .logo__carousel {
-    width: 100%;
-    height: 600px; }
+    width: 100%; }
     .logo__carousel__cell {
       width: 200px;
       height: 200px;
@@ -1307,29 +1306,58 @@ table {
     width: 100%;
     margin: 0rem; } }
 
-.custom-container {
+.about-custom-container {
   margin: 0rem 12rem;
-  font-family: 'Yolk'; }
-  .custom-container #about-us .about-us__info {
-    width: 44rem;
-    background-color: #3B4046;
-    box-sizing: border-box;
-    padding: 5rem 3rem;
-    border-radius: 0.6rem; }
-    .custom-container #about-us .about-us__info h2 {
-      font-size: 3rem;
-      padding: 0rem 0rem 2.9rem;
-      color: #C8FFC7; }
-    .custom-container #about-us .about-us__info__text p {
-      color: #FFFFFF80;
-      line-height: 1.92rem; }
-  .custom-container #about-us .about-us-image {
+  font-family: "Yolk";
+  width: 44rem; }
+  .about-custom-container #about-us .about-us {
+    z-index: 2; }
+    .about-custom-container #about-us .about-us__info {
+      background-color: #3B4046;
+      box-sizing: border-box;
+      padding: 5rem 3rem;
+      border-radius: 0.6rem; }
+      .about-custom-container #about-us .about-us__info h2 {
+        font-size: 3rem;
+        padding: 0rem 0rem 2.9rem;
+        color: #C8FFC7; }
+      .about-custom-container #about-us .about-us__info__text p {
+        color: #FFFFFF80;
+        line-height: 1.92rem; }
+  .about-custom-container #about-us .about-us-image {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-top: -15.36rem; }
-    .custom-container #about-us .about-us-image img {
+    margin-top: -15.36rem;
+    margin-left: 27rem; }
+    .about-custom-container #about-us .about-us-image img {
       border-radius: 0.6rem; }
+  @media only screen and (max-width: 600px) {
+    .about-custom-container {
+      width: 90%;
+      margin: 0rem 0rem; }
+      .about-custom-container .custom-container {
+        display: contents; } }
+
+@media only screen and (max-width: 600px) {
+  .go-custom-container {
+    margin: 0rem;
+    display: contents; }
+  .about-custom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto; }
+  #about-us .about-us-image {
+    display: block !important;
+    margin: 0 !important; }
+    #about-us .about-us-image img {
+      width: 100%; } }
+
+.go-custom-container {
+  width: 87%;
+  margin: 0rem 12rem;
+  font-family: "Yolk"; }
 
 .contact {
   padding: 0 0 3rem; }
@@ -1520,6 +1548,33 @@ table {
         .custom-container #login form a i {
           font-size: 1.4rem;
           color: #C8FFC7; }
+
+#store-images {
+  display: inline-flex;
+  gap: 14px;
+  flex-wrap: wrap; }
+  #store-images a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 170px !important;
+    height: 170px !important;
+    background-color: white;
+    border: 0.06rem solid #22252C;
+    border-radius: 0.6rem; }
+    #store-images a img {
+      width: 100%; }
+
+.store-aside {
+  width: 100%;
+  height: 100vh;
+  background-color: #3B4046;
+  border-radius: 0.6rem;
+  margin: 0 1rem 0 0; }
+
+.main-store {
+  display: flex;
+  justify-content: center; }
 
 .button {
   display: flex;
