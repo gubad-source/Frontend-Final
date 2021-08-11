@@ -16,7 +16,7 @@
     }
   }
   &__content {
-    display: flex;
+    @include flexbox(flex,center);
     &__info {
       color: white;
       padding: 31px 31px 31px;
@@ -78,6 +78,7 @@
       flex: 1;
       background-color: $color-gray;
       border-radius: 0.6rem;
+      height: 100%;
       h4 {
         font-size: 20px;
         line-height: 32px;
