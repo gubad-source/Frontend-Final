@@ -1,7 +1,3 @@
-// body{
-//     background-color: $color-dark;
-// }
-
 
 
 // main
@@ -47,6 +43,8 @@
     @include flexbox(flex, space-between, flex-start);
     box-sizing: border-box;
     padding: 6rem 6rem;
+    background: url('https://velocity.az/front/img/vector/Vector-news.svg');
+    background-repeat: no-repeat;
     &__left {
       &__heading {
         margin: 0 0 5.76rem 0;
