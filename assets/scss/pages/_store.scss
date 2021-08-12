@@ -28,11 +28,11 @@
         color: $color-forest;
         border-radius: 0.6rem;
       }
-      &.active{
+      &.active {
         background-color: $color-dark;
         border-radius: 0.6rem;
-        span{
-            color: $color-forest;
+        span {
+          color: $color-forest;
         }
       }
 
@@ -66,34 +66,64 @@
     }
   }
 }
-#store-section{
-    @include flexbox;
-    align-items: center;
-    flex-direction: column;
-    margin: 0 0 6rem 0;
-    h2{
-        font-weight: 700;
-        margin-bottom: 8px;
-        font-size: 40px;
-        line-height: 56px;
-     color: $color-forest;
+#store-section {
+  @include flexbox;
+  text-align: center;
+  flex-direction: column;
+  margin: 0 0 6rem 0;
+  h2 {
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 40px;
+    line-height: 56px;
+    color: $color-forest;
+  }
+  p {
+    max-width: 680px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 32px;
+    color: $color-white-secondary;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "";
+      background-color: $color-forest;
+      bottom: -16px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 4px;
+      width: 87px;
     }
-    p{
-max-width: 680px;
-margin: 0 auto;
-font-size: 18px;
-line-height: 32px;
-color: $color-white-secondary;
-position: relative;
-&:after{
-position: absolute;
-content: '';
-background-color: $color-forest;
-bottom: -16px;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 87px;
+  }
 }
+#pagination{
+    @include flexbox(flex,flex-end);
+    ul{
+        li{
+            display: inline-block;
+            span{
+                i{
+                    font-size: 1.6rem;
+                }
+                
+            }
+            a{
+                text-decoration: none;
+                font-size: 16px;
+                padding: 10px 15px;
+                background-color: $color-gray;
+                border-radius: 0.6rem;
+                margin: 0 1rem 0 0;
+                color: $color-white-primary;
+                &:last-child{
+                margin: 0;
+                }
+                &.active{
+                    color: $color-forest;
+                    border: 0.06rem solid $color-forest;
+                }
+            }
+        }
     }
 }

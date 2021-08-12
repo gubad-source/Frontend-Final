@@ -1608,7 +1608,7 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-items: center;
+  text-align: center;
   flex-direction: column;
   margin: 0 0 6rem 0; }
   #store-section h2 {
@@ -1626,13 +1626,35 @@ table {
     position: relative; }
     #store-section p:after {
       position: absolute;
-      content: '';
+      content: "";
       background-color: #C8FFC7;
       bottom: -16px;
       left: 50%;
       transform: translateX(-50%);
       height: 4px;
       width: 87px; }
+
+#pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  #pagination ul li {
+    display: inline-block; }
+    #pagination ul li span i {
+      font-size: 1.6rem; }
+    #pagination ul li a {
+      text-decoration: none;
+      font-size: 16px;
+      padding: 10px 15px;
+      background-color: #3B4046;
+      border-radius: 0.6rem;
+      margin: 0 1rem 0 0;
+      color: #FFFFFF; }
+      #pagination ul li a:last-child {
+        margin: 0; }
+      #pagination ul li a.active {
+        color: #C8FFC7;
+        border: 0.06rem solid #C8FFC7; }
 
 .button {
   display: flex;
