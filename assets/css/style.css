@@ -1475,10 +1475,14 @@ table {
     padding: 24px;
     font-family: "Yolk"; }
     .custom-container #login aside {
-      background-color: #C8FFC7;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       box-sizing: border-box;
       padding: 2rem 5rem;
-      border-radius: 0.6rem; }
+      border-radius: 0.6rem;
+      background: url("https://velocity.az/front/img/vector/Vector-lighten.svg");
+      background-color: #C8FFC7; }
       .custom-container #login aside h2 {
         font-weight: 700;
         margin-bottom: 8px;
@@ -1497,7 +1501,8 @@ table {
         display: inline-block;
         text-align: center; }
     .custom-container #login form {
-      margin-right: 4rem; }
+      margin-right: 4rem;
+      margin: 0 4rem 0 6rem; }
       .custom-container #login form .login-heading {
         margin: 0 0 4rem 0; }
         .custom-container #login form .login-heading h2 {
@@ -1724,10 +1729,27 @@ table {
     margin: 0 0 0.54rem 0; }
   .calculator__content__tabs button {
     background-color: #3B4046;
-    border: 0.06rem solid #C8FFC7;
+    border: 0.06rem solid #FFFFFF80;
     padding: 0.6rem;
     border-radius: 0.6rem;
     color: #FFFFFF; }
+    .calculator__content__tabs button.active {
+      border: transparent;
+      color: #C8FFC7;
+      background-color: #22252C;
+      border: #C8FFC7; }
+  .calculator__content__tabs__tabs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 0.06px solid #FFFFFF80;
+    padding: 1rem 1rem;
+    border-radius: 0.6rem;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    width: 94%; }
+    .calculator__content__tabs__tabs a {
+      font-size: larger; }
   .calculator__content .input {
     position: relative; }
     .calculator__content .input .range-article input {

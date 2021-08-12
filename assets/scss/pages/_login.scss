@@ -8,10 +8,14 @@
     padding: 24px;
     font-family: "Yolk";
     aside {
-      background-color: $color-forest;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       box-sizing: border-box;
       padding: 2rem 5rem;
       border-radius: 0.6rem;
+      background: url('https://velocity.az/front/img/vector/Vector-lighten.svg');
+      background-color: $color-forest;
       h2 {
         font-weight: 700;
         margin-bottom: 8px;
@@ -34,6 +38,7 @@
     }
     form {
       margin-right: 4rem;
+      margin: 0 4rem 0 6rem;
       .login-heading {
         margin: 0 0 4rem 0;
         h2 {
