@@ -1719,6 +1719,20 @@ table {
       transform: translateX(-50%);
       height: 4px;
       width: 87px; }
+  #store-section .store__heading__tab {
+    padding: 4rem 0 0; }
+    #store-section .store__heading__tab button {
+      background-color: #3B4046;
+      border: 0.06rem solid #FFFFFF;
+      box-sizing: border-box;
+      padding: 1rem;
+      border-radius: 0.6rem;
+      color: #FFFFFF;
+      margin: 0rem .2rem; }
+      #store-section .store__heading__tab button span {
+        position: relative;
+        bottom: 0.6rem;
+        left: 0.3rem; }
 
 #pagination {
   display: flex;

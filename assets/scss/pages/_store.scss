@@ -96,6 +96,23 @@
       width: 87px;
     }
   }
+  .store__heading__tab {
+    padding: 4rem 0 0;
+    button {
+      background-color: $color-gray;
+      border: 0.06rem solid $color-white-primary;
+      box-sizing: border-box;
+      padding: 1rem;
+      border-radius: 0.6rem;
+      color: $color-white-primary;
+      margin:0rem .2rem;
+      span {
+        position: relative;
+        bottom: 0.6rem;
+        left: 0.3rem;
+      }
+    }
+  }
 }
 #pagination{
     @include flexbox(flex,flex-end);
