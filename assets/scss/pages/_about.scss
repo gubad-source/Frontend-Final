@@ -7,10 +7,16 @@
     .about-us {
       z-index: 2;
       &__info {
-        background-color: $color-gray;
+       
         box-sizing: border-box;
         padding: 5rem 3rem;
         border-radius: 0.6rem;
+        background: url('../images/download.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: 0rem;
+        background-position-y: -3rem;
+        background-color: $color-gray;
         h2 {
           font-size: 3rem;
           padding: 0rem 0rem 2.9rem;

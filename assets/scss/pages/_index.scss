@@ -6,11 +6,11 @@
     padding: 0px 30px;
     margin: auto;
     background: url('../images/Vector-slider.svg');
-    background-position: 4rem -4rem;
+    background-position: 2rem -4rem;
     background-repeat: no-repeat;
     background-size: 26rem;
     .card{
-      height: 550px;
+      height: 600px;
       text-align: center;
       margin: 10px 0px;
       color: white;
@@ -22,6 +22,16 @@
         width: 100%;
         height: 100%;
         text-align: left;
+        h1{
+          font-size: 40px;
+          padding: 0 0 20px;
+          color: $color-white-primary;
+        }
+        p{
+          font-size: 20px;
+          padding: 0 0 20px;
+          color: $color-white-primary;
+        }
       }
       .image{
         width: 100%;

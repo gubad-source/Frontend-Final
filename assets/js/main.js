@@ -1,35 +1,36 @@
 
-$(".carousel").owlCarousel({
-  // options
-  margin: 10,
-  cellAlign: "center",
-  contain: true,
-  wrapAround: true,
-  autoplay: true,
-  dots: true,
-  autoplayTimeout: 1000,
-  loop: true,
-  responsive: {
-    0: {
-      items: 1,
-      nav: false,
-    },
-  },
-});
 ////////////////////////////////////// carousel
-$(".logo__carousel").flickity({
-  // options
-  cellAlign: "center",
-  contain: true,
-  wrapAround: true,
-  autoPlay: true,
-  pageDots: false,
-  prevNextButtons: false,
-});
+$(document).ready(function(){
+  $(".carousel").owlCarousel({
+    // options
+    margin: 10,
+    cellAlign: "center",
+    contain: true,
+    wrapAround: true,
+    autoplay: true,
+    dots: true,
+    autoplayTimeout: 1000,
+    loop: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+      },
+    },
+  });
+
+  $(".logo__carousel").flickity({
+    // options
+    cellAlign: "center",
+    contain: true,
+    wrapAround: true,
+    autoPlay: true,
+    pageDots: false,
+    prevNextButtons: false,
+  });
+})
+
 ///******************************
-
-
-
 
 ////////////////////////////////////// tabs
 let tariffTarget = Array.from(
