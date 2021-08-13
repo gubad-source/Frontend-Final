@@ -1,5 +1,21 @@
 
-
+$(".carousel").owlCarousel({
+  // options
+  margin: 10,
+  cellAlign: "center",
+  contain: true,
+  wrapAround: true,
+  autoplay: true,
+  dots: true,
+  autoplayTimeout: 1000,
+  loop: true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: false,
+    },
+  },
+});
 ////////////////////////////////////// carousel
 $(".logo__carousel").flickity({
   // options
