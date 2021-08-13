@@ -1069,9 +1069,8 @@ table {
     padding: 0px 30px;
     margin: auto;
     background: url("../images/Vector-slider.svg");
-    background-position: 11rem 0rem;
+    background-position: 4rem -4rem;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: 26rem; }
     .wrapper .carousel .card {
       height: 550px;
