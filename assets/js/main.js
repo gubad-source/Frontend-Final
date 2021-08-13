@@ -16,6 +16,14 @@ $(document).ready(function(){
         items: 1,
         nav: false,
       },
+      600:{
+        items:1,
+        nav:false
+      },
+      1200:{
+        items:1,
+        nav:false
+      }
     },
   });
 
